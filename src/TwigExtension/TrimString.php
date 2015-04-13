@@ -28,7 +28,7 @@ class TrimString extends TwigExtension {
    */
   public function getFilters() {
     return array(
-      new \Twig_SimpleFilter('trim_string', array('Drupal\trim_string\TwigExtension\TrimString', 'trimString')),
+      new \Twig_SimpleFilter('trim_string', array($this, 'trimString')),
     );
   }
 
